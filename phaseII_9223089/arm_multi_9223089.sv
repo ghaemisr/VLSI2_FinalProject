@@ -361,13 +361,13 @@ module datapath(input  logic        clk, reset,
   mux3 #(32)    alumux(ALUOut, Data, ALUResult, ResultSrc, Result);
   
   //Register File
-  regfile       rf(clk, RegWrite, RA1, RA2, Instr[15:12], Result, Result, RD1, RD2); 
+  regfile  rf(clk, RegWrite, RA1, RA2, Instr[15:12], Result, Result, RD1, RD2); 
   
   //Extend
-  extend        ext(Instr[23:0], ImmSrc, ExtImm);
+  extend   ext(Instr[23:0], ImmSrc, ExtImm);
   
   //ALU
-  alu           alu(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
+  alu      alu(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
   
   assign PCNext = Result;
   
@@ -451,3 +451,4 @@ module extend(input  logic [23:0] Instr,
       default: ExtImm = 32'bx; // undefined
     endcase             
 endmodule
+
