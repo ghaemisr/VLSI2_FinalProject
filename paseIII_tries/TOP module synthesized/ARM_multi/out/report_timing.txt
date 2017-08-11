@@ -1,0 +1,127 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: C-2009.06-SP5
+Date   : Tue Aug  8 14:30:33 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: arm/c/dec/fsm/state_reg<2>
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mem/RAM_reg<2><0>
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                tsmc18_wl40           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  17.50      17.50
+  clock network delay (ideal)                             0.00      17.50
+  arm/c/dec/fsm/state_reg<2>/CK (DFFRHQX1)                0.00 #    17.50 r
+  arm/c/dec/fsm/state_reg<2>/Q (DFFRHQX1)                 0.40      17.90 f
+  arm/c/dec/fsm/U10/Y (INVX1)                             1.12      19.02 r
+  arm/c/dec/fsm/U6/Y (NAND2X1)                            0.81      19.83 f
+  arm/c/dec/fsm/U11/Y (NOR2X1)                            1.47      21.29 r
+  arm/c/dec/fsm/ALUSrcA<0> (mainfsm)                      0.00      21.29 r
+  arm/c/dec/U5/Y (INVX1)                                  0.24      21.54 f
+  arm/c/dec/U4/Y (INVX1)                                  0.56      22.10 r
+  arm/c/dec/ALUSrcA<0> (decode)                           0.00      22.10 r
+  arm/c/U2/Y (INVX1)                                      0.22      22.32 f
+  arm/c/U1/Y (INVX1)                                      0.30      22.62 r
+  arm/c/ALUSrcA<0> (controller)                           0.00      22.62 r
+  arm/U2/Y (INVX1)                                        0.19      22.81 f
+  arm/U1/Y (INVX1)                                        0.47      23.28 r
+  arm/dp/ALUSrcB<1> (datapath)                            0.00      23.28 r
+  arm/dp/U4/Y (INVX1)                                     0.22      23.50 f
+  arm/dp/U3/Y (INVX1)                                     1.42      24.92 r
+  arm/dp/srcBmux/s<1> (mux3_WIDTH32_2)                    0.00      24.92 r
+  arm/dp/srcBmux/U4/Y (INVX1)                             0.49      25.41 f
+  arm/dp/srcBmux/U2/Y (CLKINVX3)                          1.60      27.01 r
+  arm/dp/srcBmux/U10/Y (NOR2BX1)                          0.27      27.28 f
+  arm/dp/srcBmux/U9/Y (INVX1)                             0.62      27.91 r
+  arm/dp/srcBmux/U6/Y (CLKINVX3)                          1.42      29.32 f
+  arm/dp/srcBmux/U16/Y (AOI22X1)                          0.78      30.10 r
+  arm/dp/srcBmux/U15/Y (OAI2BB1X1)                        0.49      30.59 f
+  arm/dp/srcBmux/y<2> (mux3_WIDTH32_2)                    0.00      30.59 f
+  arm/dp/alu/b<2> (alu)                                   0.00      30.59 f
+  arm/dp/alu/add_465/B<2> (alu_DW01_add_0)                0.00      30.59 f
+  arm/dp/alu/add_465/U1_2/CO (ADDFX2)                     0.53      31.12 f
+  arm/dp/alu/add_465/U1_3/CO (ADDFX2)                     0.32      31.43 f
+  arm/dp/alu/add_465/U1_4/CO (ADDFX2)                     0.32      31.75 f
+  arm/dp/alu/add_465/U1_5/CO (ADDFX2)                     0.32      32.06 f
+  arm/dp/alu/add_465/U1_6/CO (ADDFX2)                     0.32      32.38 f
+  arm/dp/alu/add_465/U1_7/CO (ADDFX2)                     0.32      32.69 f
+  arm/dp/alu/add_465/U1_8/CO (ADDFX2)                     0.32      33.01 f
+  arm/dp/alu/add_465/U1_9/CO (ADDFX2)                     0.32      33.32 f
+  arm/dp/alu/add_465/U1_10/CO (ADDFX2)                    0.32      33.64 f
+  arm/dp/alu/add_465/U1_11/CO (ADDFX2)                    0.32      33.95 f
+  arm/dp/alu/add_465/U1_12/CO (ADDFX2)                    0.32      34.27 f
+  arm/dp/alu/add_465/U1_13/CO (ADDFX2)                    0.32      34.58 f
+  arm/dp/alu/add_465/U1_14/CO (ADDFX2)                    0.32      34.90 f
+  arm/dp/alu/add_465/U1_15/CO (ADDFX2)                    0.32      35.21 f
+  arm/dp/alu/add_465/U1_16/CO (ADDFX2)                    0.32      35.53 f
+  arm/dp/alu/add_465/U1_17/CO (ADDFX2)                    0.32      35.84 f
+  arm/dp/alu/add_465/U1_18/CO (ADDFX2)                    0.32      36.16 f
+  arm/dp/alu/add_465/U1_19/CO (ADDFX2)                    0.32      36.47 f
+  arm/dp/alu/add_465/U1_20/CO (ADDFX2)                    0.32      36.79 f
+  arm/dp/alu/add_465/U1_21/CO (ADDFX2)                    0.32      37.10 f
+  arm/dp/alu/add_465/U1_22/CO (ADDFX2)                    0.32      37.42 f
+  arm/dp/alu/add_465/U1_23/CO (ADDFX2)                    0.32      37.73 f
+  arm/dp/alu/add_465/U1_24/CO (ADDFX2)                    0.32      38.05 f
+  arm/dp/alu/add_465/U1_25/CO (ADDFX2)                    0.32      38.37 f
+  arm/dp/alu/add_465/U1_26/CO (ADDFX2)                    0.32      38.68 f
+  arm/dp/alu/add_465/U1_27/CO (ADDFX2)                    0.32      39.00 f
+  arm/dp/alu/add_465/U1_28/CO (ADDFX2)                    0.32      39.31 f
+  arm/dp/alu/add_465/U1_29/CO (ADDFX2)                    0.32      39.63 f
+  arm/dp/alu/add_465/U1_30/CO (ADDFX2)                    0.32      39.94 f
+  arm/dp/alu/add_465/U1_31/S (ADDFX2)                     0.28      40.22 f
+  arm/dp/alu/add_465/SUM<31> (alu_DW01_add_0)             0.00      40.22 f
+  arm/dp/alu/U30/Y (AOI22X1)                              0.43      40.65 r
+  arm/dp/alu/U166/Y (NAND2X1)                             0.73      41.38 f
+  arm/dp/alu/Result<31> (alu)                             0.00      41.38 f
+  arm/dp/alumux/d2<31> (mux3_WIDTH32_1)                   0.00      41.38 f
+  arm/dp/alumux/U12/Y (OAI2BB1X1)                         0.98      42.35 f
+  arm/dp/alumux/y<31> (mux3_WIDTH32_1)                    0.00      42.35 f
+  arm/dp/adrmux/d1<31> (mux2_WIDTH32)                     0.00      42.35 f
+  arm/dp/adrmux/U10/Y (AOI22X1)                           0.57      42.92 r
+  arm/dp/adrmux/U9/Y (INVX1)                              0.39      43.32 f
+  arm/dp/adrmux/y<31> (mux2_WIDTH32)                      0.00      43.32 f
+  arm/dp/Adr<31> (datapath)                               0.00      43.32 f
+  arm/Adr<31> (arm)                                       0.00      43.32 f
+  mem/a<31> (mem)                                         0.00      43.32 f
+  mem/U547/Y (NOR3X1)                                     0.52      43.84 r
+  mem/U546/Y (NOR4BX1)                                    0.56      44.40 r
+  mem/U548/Y (AND4X2)                                     0.32      44.72 r
+  mem/U516/Y (AND2X2)                                     0.55      45.28 r
+  mem/U388/Y (NAND2X2)                                    0.65      45.92 f
+  mem/U423/Y (NOR2X1)                                     1.15      47.08 r
+  mem/U78/Y (INVX1)                                       0.48      47.55 f
+  mem/U38/Y (CLKINVX3)                                    1.19      48.74 r
+  mem/RAM_reg<2><0>/E (EDFFX1)                            0.00      48.74 r
+  data arrival time                                                 48.74
+
+  clock clk (rise edge)                                  52.50      52.50
+  clock network delay (ideal)                             0.00      52.50
+  mem/RAM_reg<2><0>/CK (EDFFX1)                           0.00      52.50 r
+  library setup time                                     -0.35      52.15
+  data required time                                                52.15
+  --------------------------------------------------------------------------
+  data required time                                                52.15
+  data arrival time                                                -48.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.40
+
+
+1

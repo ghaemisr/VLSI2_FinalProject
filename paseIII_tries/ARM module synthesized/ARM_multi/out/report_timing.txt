@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : arm
+Version: C-2009.06-SP5
+Date   : Wed Aug  9 18:17:40 2017
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: c/dec/fsm/state_reg<2>
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: c/cl/flagreg0/q_reg<0>
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  arm                tsmc18_wl40           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   7.50       7.50
+  clock network delay (ideal)                             0.00       7.50
+  c/dec/fsm/state_reg<2>/CK (DFFRHQXL)                    0.00       7.50 r
+  c/dec/fsm/state_reg<2>/Q (DFFRHQXL)                     0.72       8.22 r
+  c/dec/fsm/U4/Y (INVX20)                                 0.18       8.41 f
+  c/dec/fsm/U14/Y (NAND2X4)                               0.26       8.67 r
+  c/dec/fsm/U19/Y (NOR2X4)                                0.12       8.79 f
+  c/dec/fsm/ALUSrcB<1> (mainfsm)                          0.00       8.79 f
+  c/dec/U10/Y (INVX1)                                     0.26       9.05 r
+  c/dec/U9/Y (INVX1)                                      0.21       9.26 f
+  c/dec/ALUSrcB<1> (decode)                               0.00       9.26 f
+  c/U1/Y (INVX4)                                          0.21       9.47 r
+  c/U3/Y (INVX1)                                          0.17       9.64 f
+  c/ALUSrcA<0> (controller)                               0.00       9.64 f
+  U4/Y (BUFX3)                                            0.17       9.80 f
+  dp/ALUSrcA<0> (datapath)                                0.00       9.80 f
+  dp/U7/Y (INVX1)                                         0.24      10.04 r
+  dp/U6/Y (INVX1)                                         0.34      10.38 f
+  dp/srcAmux/s<0> (mux3_WIDTH32_0)                        0.00      10.38 f
+  dp/srcAmux/U19/Y (NOR2BX4)                              0.23      10.61 f
+  dp/srcAmux/U2/Y (BUFX20)                                0.16      10.77 f
+  dp/srcAmux/U40/Y (INVX1)                                0.35      11.11 r
+  dp/srcAmux/U8/Y (INVX8)                                 0.44      11.55 f
+  dp/srcAmux/U49/Y (AOI22X1)                              0.50      12.05 r
+  dp/srcAmux/U48/Y (OAI2BB1X1)                            0.59      12.65 f
+  dp/srcAmux/y<6> (mux3_WIDTH32_0)                        0.00      12.65 f
+  dp/alu/a<6> (alu)                                       0.00      12.65 f
+  dp/alu/add_439/A<6> (alu_DW01_add_0)                    0.00      12.65 f
+  dp/alu/add_439/U1_6/CO (ADDFHX4)                        0.48      13.13 f
+  dp/alu/add_439/U1_7/CO (ADDFX2)                         0.29      13.42 f
+  dp/alu/add_439/U1_8/CO (ADDFX2)                         0.32      13.74 f
+  dp/alu/add_439/U1_9/CO (ADDFX2)                         0.32      14.05 f
+  dp/alu/add_439/U1_10/CO (ADDFX2)                        0.32      14.37 f
+  dp/alu/add_439/U1_11/CO (ADDFX2)                        0.32      14.68 f
+  dp/alu/add_439/U1_12/CO (ADDFX2)                        0.32      15.00 f
+  dp/alu/add_439/U1_13/CO (ADDFX2)                        0.32      15.31 f
+  dp/alu/add_439/U1_14/CO (ADDFX2)                        0.32      15.63 f
+  dp/alu/add_439/U1_15/CO (ADDFX2)                        0.32      15.94 f
+  dp/alu/add_439/U1_16/CO (ADDFX2)                        0.32      16.26 f
+  dp/alu/add_439/U1_17/CO (ADDFX2)                        0.32      16.57 f
+  dp/alu/add_439/U1_18/CO (ADDFX2)                        0.32      16.89 f
+  dp/alu/add_439/U1_19/CO (ADDFX2)                        0.32      17.20 f
+  dp/alu/add_439/U1_20/CO (ADDFX2)                        0.32      17.52 f
+  dp/alu/add_439/U1_21/CO (ADDFX2)                        0.32      17.83 f
+  dp/alu/add_439/U1_22/CO (ADDFX2)                        0.32      18.15 f
+  dp/alu/add_439/U1_23/CO (ADDFX2)                        0.32      18.46 f
+  dp/alu/add_439/U1_24/CO (ADDFX2)                        0.32      18.78 f
+  dp/alu/add_439/U1_25/CO (ADDFX2)                        0.32      19.09 f
+  dp/alu/add_439/U1_26/CO (ADDFX2)                        0.32      19.41 f
+  dp/alu/add_439/U1_27/CO (ADDFX2)                        0.32      19.72 f
+  dp/alu/add_439/U1_28/CO (ADDFX2)                        0.32      20.04 f
+  dp/alu/add_439/U1_29/CO (ADDFHX4)                       0.21      20.26 f
+  dp/alu/add_439/U1_30/CO (ADDFHX4)                       0.19      20.45 f
+  dp/alu/add_439/U1_31/S (ADDFX2)                         0.35      20.80 r
+  dp/alu/add_439/SUM<31> (alu_DW01_add_0)                 0.00      20.80 r
+  dp/alu/U21/Y (AOI22X4)                                  0.10      20.90 f
+  dp/alu/U15/Y (OAI221X4)                                 0.53      21.43 r
+  dp/alu/U52/Y (XNOR2X1)                                  0.48      21.91 r
+  dp/alu/U12/Y (NOR3X4)                                   0.10      22.01 f
+  dp/alu/ALUFlags<0> (alu)                                0.00      22.01 f
+  dp/ALUFlags<0> (datapath)                               0.00      22.01 f
+  c/ALUFlags<0> (controller)                              0.00      22.01 f
+  c/cl/ALUFlags<0> (condlogic)                            0.00      22.01 f
+  c/cl/flagreg0/d<0> (flopenr_WIDTH2_1)                   0.00      22.01 f
+  c/cl/flagreg0/U3/Y (AOI22X4)                            0.26      22.28 r
+  c/cl/flagreg0/U2/Y (INVX8)                              0.03      22.31 f
+  c/cl/flagreg0/q_reg<0>/D (DFFRHQXL)                     0.00      22.31 f
+  data arrival time                                                 22.31
+
+  clock clk (rise edge)                                  22.50      22.50
+  clock network delay (ideal)                             0.00      22.50
+  c/cl/flagreg0/q_reg<0>/CK (DFFRHQXL)                    0.00      22.50 r
+  library setup time                                     -0.17      22.33
+  data required time                                                22.33
+  --------------------------------------------------------------------------
+  data required time                                                22.33
+  data arrival time                                                -22.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1

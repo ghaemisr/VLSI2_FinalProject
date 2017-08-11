@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: C-2009.06-SP5
+Date   : Tue Aug  8 14:47:13 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/cad/TECH/TSMC/180/synopsys/typical.db)
+
+Number of ports:               67
+Number of nets:               163
+Number of cells:               66
+Number of references:           3
+
+Combinational area:       59802.019452
+Noncombinational area:    207600.629524
+Net Interconnect area:    3735966.065308
+
+Total cell area:          267402.648976
+Total area:               4003368.714284
+1

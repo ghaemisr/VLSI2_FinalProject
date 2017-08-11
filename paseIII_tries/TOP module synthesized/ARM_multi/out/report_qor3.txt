@@ -1,0 +1,64 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : qor
+Design : top
+Version: C-2009.06-SP5
+Date   : Mon Aug  7 18:21:30 2017
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              36.00
+  Critical Path Length:          5.46
+  Critical Path Slack:          -2.75
+  Critical Path Clk Period:      3.00
+  Total Negative Slack:      -7609.19
+  No. of Violating Paths:     4997.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         28
+  Hierarchical Port Count:       1905
+  Leaf Cell Count:               8373
+  Buf/Inv Cell Count:            1880
+  CT Buf/Inv Cell Count:            0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   176754.917219
+  Noncombinational Area:
+                        209157.384773
+  Net Area:            4170155.015015
+  -----------------------------------
+  Cell Area:            385912.301992
+  Design Area:         4556067.317007
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          8415
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ICICVM.lab.edu
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.53
+  Logic Optimization:           38.61
+  Mapping Optimization:        131.84
+  -----------------------------------
+  Overall Compile Time:        174.68
+
+1
